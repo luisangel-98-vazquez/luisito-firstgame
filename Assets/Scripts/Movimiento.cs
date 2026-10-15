@@ -12,25 +12,25 @@ public class Movimiento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector3.left * velocidad * Time.deltaTime);
             Debug.Log("mov, izquierdo");
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.right * velocidad * Time.deltaTime);
             Debug.Log("mov, derecho");
         }
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.up * velocidad * Time.deltaTime);
             Debug.Log("mov, arriba");
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(Vector3.down * velocidad * Time.deltaTime);
             Debug.Log("mov,abajo");
