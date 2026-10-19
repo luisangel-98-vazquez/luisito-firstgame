@@ -12,8 +12,14 @@ public class CambioColor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.Space)){
+        if (Input.GetKey(KeyCode.Space))
+        {
             spriteRenderer.color = Color.red;
         }
+    }
+
+    public void CambiarColor(Color nuevoColor)
+    {
+        spriteRenderer.color = nuevoColor;
     }
 }
